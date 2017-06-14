@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Práctica 3</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <!--<link type="text/css" rel="stylesheet" href="css/layout-1.css"/>-->
+    <link type="text/css" rel="stylesheet" href="css/layout-2.css"/>
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print"/>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+<div id="header">
+    <h1>Práctica 1</h1>
+</div>
+<div id="index" class="nav">
+    <h2>Indice</h2>
+    <ul>
+        <li><a href="#br-usage">Uso de br</a></li>
+        <li><a href="#definitions">Definiciones</a></li>
+        <li><a href="#table">Tabla</a></li>
+        <li><a href="#form">Formulario</a></li>
+    </ul>
+</div>
+
+<div class="section" id="br-usage">
+    <h2>Uso de br</h2>
+
+    <p class="answer">
+        El tag br indica que hay un salto de linea. Uno de los usos que se le da para separar los parrafos de un texto,
+        este uso no es el correspondiente, si no que para esto html tiene una estructura propia. Tambien se lo usa para
+        generar espacios vacios entre elementos, esto tampoco es correcto, por que se la estaria usando para agragar
+        estilo.El uso correcto que se le debe dar es para pasar de renglon dentro de un mismo parrafo, por ejemplo en
+        caciones o poemas.
+    </p>
+
+    <h3>Ejemplo</h3>
+
+    <p class="song">
+        I tried so hard<br/>
+        And got so far<br/>
+        But in the end<br/>
+        It doesn't even matter<br/>
+        I had to fall<br/>
+        To lose it all<br/>
+        But in the end<br/>
+        It doesn't even matter<br/>
+    </p>
+</div>
+
+<div class="section" id="definitions">
+    <h2>Definiciones</h2>
+
+    <p class="definition">
+        URI (uniform resource identifier): Es una cadena de caracteres que identifica un recurso abstracto o fisico.
+    </p>
+
+    <p>
+        URL (uniform resource locator): es una secuencia de caracteres, de acuerdo a un formato
+        modélico y estándar, que se usa para nombrar recursos en Internet para su localización o identificación, como
+        por ejemplo documentos textuales, imágenes, vídeos, presentaciones digitales, etc.
+    </p>
+
+    <p>
+        HTML (hyperText markup language): es un estándar que sirve de referencia para la elaboración de páginas web en
+        sus diferentes versiones, define una estructura básica y un código para la definición de contenido de una página
+        web, como texto, imágenes, etc.
+    </p>
+
+    <p>
+        XHTML (eXtensible HyperText Markup Language): es solamente la versión XML de HTML, por lo que tiene,
+        básicamente, las mismas funcionalidades, pero cumple las especificaciones, más estrictas, de XML.
+    </p>
+
+    <p>
+        CSS (Cascading Style Sheets) : hacen referencia a un lenguaje de hojas de estilos usado para describir la
+        presentación semántica (el aspecto y formato) de un documento escrito en HTML.
+    </p>
+</div>
+
+<div class="section" id="table">
+    <h2>Tabla</h2>
+    <table id="table-info">
+        <tr>
+            <th rowspan="2">Firstname</th>
+            <th rowspan="2">Lastname</th>
+            <th rowspan="2">Mail</th>
+            <th rowspan="2">Phone</th>
+            <th colspan="3">Actions</th>
+        </tr>
+        <tr>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </table>
+    <div class="loading-table" id="loading-table-message">
+        <img src="img/loading.gif" alt="loading..."/>
+        <h4> Cargando datos de la tabla.</h4>
+    </div>
+</div>
+
+<div class="section" id="form">
+    <h2>Formulario</h2>
+
+    <form action="">
+        <div>
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname"/>
+        </div>
+        <div>
+            <label for="lastname">Lastname:</label>
+            <input type="text" id="lastname"/>
+        </div>
+        <div>
+            <label for="mail">Mail:</label>
+            <input type="text" id="mail"/>
+        </div>
+        <div>
+            <label for="phone">Telefono:</label>
+            <input type="text" id="phone"/>
+        </div>
+
+        <h3>Dirección</h3>
+
+        <div>
+            <label for="street">Calle:</label>
+            <input type="text" id="street"/>
+        </div>
+        <div>
+            <label for="state">Provincia:</label>
+            <select name="state" id="state">
+                <option value="buenosaires">Buenos Aires</option>
+                <option value="santafe">Santa Fe</option>
+                <option value="cordoba">Cordoba</option>
+                <option value="jujuy">Jujuy</option>
+            </select>
+        </div>
+        <div>
+            <label for="post-code">Codigo Postal:</label>
+            <input type="text" id="post-code"/>
+        </div>
+
+        <h3>Otros datos</h3>
+        <div>
+            <label for="birthdate">Fecha de Nacimiento:</label>
+            <input type="text" id="birthdate" maxlength="10"/>
+        </div>
+        <div>
+            <label>Estado Civil:</label>
+            <label>Soltero<input type="radio" name="civil-state"/></label>
+            <label>Casado<input type="radio" name="civil-state"/></label>
+        </div>
+        <div>
+            <label for="picture">Fecha de Nacimiento:</label>
+            <input type="file" id="picture"/>
+        </div>
+        <div>
+            <label for="about">About</label>
+            <textarea id="about" cols="50" rows="5"/>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar"/>
+            <input type="button" value="Cancelar"/>
+        </div>
+
+    </form>
+</div>
+
+
+</body>
+
+</html>
