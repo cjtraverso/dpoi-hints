@@ -21,4 +21,11 @@ Internet oriented design and programming course materials and resolutions
 
 ## Submit your results
 
-Push your results on a branch following {user}-{practice} naming convention. Eg: **greg.schott-tp2**
+Push your results on a branch following {user}-{practice} naming convention. Eg: **max.mule-tp3**
+
+### Starting branches with previous work
+Eg:
+If you are Max the Mule and want to start a branch for your **practice 3** based on dpoi **practice 2**
+```bash
+git checkout -b max.mule-tp3 dpoi-tp2
+```
