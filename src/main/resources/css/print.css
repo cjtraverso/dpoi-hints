@@ -1,0 +1,23 @@
+/* Created by Javi on 3/19/14. */
+
+/*@page{margin:0 auto;}*/
+
+#header {
+    display: none;
+}
+
+#index {
+    display: none;
+}
+
+body {
+    padding: 0;
+}
+
+div.section {
+    padding: 0;
+}
+
+input[type=text],input[type=radio]{
+    border: 1px solid black;
+}
