@@ -1,0 +1,247 @@
+/* Created by Javi on 3/13/14. */
+/* TP 2*/
+
+body {
+    /*margin-left: 20px;*/
+    background-color: beige;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+h1 {
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+h3 {
+    margin-left: 20px;
+    font-style: italic;
+    color: gray;
+}
+
+h4.error {
+    color: red;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.answer {
+    border-radius: 5px;
+    background-color: orange;
+    max-width: 70%;
+    padding: 5px;
+}
+
+p.song {
+    font-style: italic;
+    text-align: center;
+    width: 200px;
+}
+
+#definitions > p {
+    padding-left: 30px;
+}
+
+table, tr, td, th, tr {
+    border: 1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgray;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+tr {
+    height: 30px;
+}
+
+tr:nth-child(2n+0){
+    background-color: lightgray;
+}
+
+tr:nth-child(2n+1){
+    background-color: white;
+}
+
+button, input[type=submit] {
+    height: 30px;
+    min-width: 100px;
+    background-color: teal;
+    color: white;
+
+    border: 1px darkgray;
+    border-radius: 5px;
+
+    margin: 20px;
+}
+
+button:hover, input[type=submit]:hover {
+    background-color: black;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+
+form {
+    display: table;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form > div {
+    display: table-row;
+}
+
+select {
+    display: table-cell;
+}
+
+input[type=text], input[type=radio] {
+    display: table-cell;
+    border: 1px solid lightcyan;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+
+input[type=file] {
+    display: table-cell;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+
+textarea {
+    display: table-cell;
+}
+
+div.loading-table {
+    padding-left: 30%;
+}
+
+div.loading-table img {
+    display: inline;
+    height: 20px;
+}
+
+div.loading-table h4 {
+    display: inline;
+}
+
+div.overlay {
+    background-color: black;
+    opacity: 0.6;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+div.dialog-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+div.dialog {
+
+    border-radius: 10px;
+
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 5px black;
+}
+
+div.dialog > div.dialog-header {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    color: white;
+    background-color: darkgrey;
+
+    height: 40px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    padding-top: 10px;
+}
+
+div.dialog > div.dialog-header h2, div.dialog > div.dialog-header h3 {
+    color: white;
+    margin: 0 0 0 10px;
+    font-style: normal;
+}
+
+div.dialog > div.dialog-body {
+    padding: 10px 5px 5px 10px;
+
+    border-bottom: 1px darkgrey;
+}
+
+div.dialog > div.dialog-footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    color: black;
+
+    height: 40px;
+    width: 100%;
+
+    border-top: 1px darkgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div.dialog > div.dialog-footer button, div.dialog > div.dialog-footer input[type=submit] {
+    height: 30px;
+
+    color: gray;
+
+    float: right;
+
+    background-color: rgb(221, 221, 221);
+    border: 1px darkgray;
+    border-radius: 5px;
+
+    margin: 10px;
+}
+
+div.dialog > div.dialog-footer button:hover, div.dialog > div.dialog-footer input[type=submit]:hover {
+    background-color: rgb(221, 221, 221);
+    color: black;
+}
+
+.button {
+    cursor: pointer;
+}

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Práctica 4</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <!--<link type="text/css" rel="stylesheet" href="css/layout-1.css"/>-->
+    <link type="text/css" rel="stylesheet" href="css/layout-2.css"/>
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print"/>
+</head>
+
+<body>
+<div id="header">
+    <h1>Práctica 4</h1>
+</div>
+<div id="index" class="nav">
+    <h2>Indice</h2>
+    <ul>
+        <li><a href="#br-usage">Uso de br</a></li>
+        <li><a href="#definitions">Definiciones</a></li>
+        <li><a href="#table">Tabla</a></li>
+    </ul>
+</div>
+
+<div class="section" id="br-usage">
+    <h2>Uso de br</h2>
+
+    <p class="answer">
+        El tag br indica que hay un salto de linea. Uno de los usos que se le da para separar los parrafos de un texto,
+        este uso no es el correspondiente, si no que para esto html tiene una estructura propia. Tambien se lo usa para
+        generar espacios vacios entre elementos, esto tampoco es correcto, por que se la estaria usando para agragar
+        estilo.El uso correcto que se le debe dar es para pasar de renglon dentro de un mismo parrafo, por ejemplo en
+        caciones o poemas.
+    </p>
+
+    <h3>Ejemplo</h3>
+
+    <p class="song">
+        I tried so hard<br/>
+        And got so far<br/>
+        But in the end<br/>
+        It doesn't even matter<br/>
+        I had to fall<br/>
+        To lose it all<br/>
+        But in the end<br/>
+        It doesn't even matter<br/>
+    </p>
+</div>
+
+<div class="section" id="definitions">
+    <h2>Definiciones</h2>
+
+    <p class="definition">
+        URI (uniform resource identifier): Es una cadena de caracteres que identifica un recurso abstracto o fisico.
+    </p>
+
+    <p>
+        URL (uniform resource locator): es una secuencia de caracteres, de acuerdo a un formato
+        modélico y estándar, que se usa para nombrar recursos en Internet para su localización o identificación, como
+        por ejemplo documentos textuales, imágenes, vídeos, presentaciones digitales, etc.
+    </p>
+
+    <p>
+        HTML (hyperText markup language): es un estándar que sirve de referencia para la elaboración de páginas web en
+        sus diferentes versiones, define una estructura básica y un código para la definición de contenido de una página
+        web, como texto, imágenes, etc.
+    </p>
+
+    <p>
+        XHTML (eXtensible HyperText Markup Language): es solamente la versión XML de HTML, por lo que tiene,
+        básicamente, las mismas funcionalidades, pero cumple las especificaciones, más estrictas, de XML.
+    </p>
+
+    <p>
+        CSS (Cascading Style Sheets) : hacen referencia a un lenguaje de hojas de estilos usado para describir la
+        presentación semántica (el aspecto y formato) de un documento escrito en HTML.
+    </p>
+</div>
+
+<div class="section" id="table">
+    <h2>Tabla</h2>
+    <table id="table-info">
+        <tr>
+            <th rowspan="2">Firstname</th>
+            <th rowspan="2">Lastname</th>
+            <th rowspan="2">Mail</th>
+            <th rowspan="2">Phone</th>
+            <th colspan="3">Actions</th>
+        </tr>
+        <tr>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </table>
+    <div class="loading-table" id="loading-table-message">
+        <img src="img/loading.gif" alt="loading..."/>
+        <h4> Cargando datos de la tabla.</h4>
+    </div>
+    <button class="add-person-button">
+        Add new person
+    </button>
+
+</div>
+
+<div class="dialog" id="viewDialog">
+    <div class="dialog-header   ">
+        <h3>Persona</h3>
+    </div>
+    <div class="dialog-body">
+        <div id="personView">
+            <p>
+                <span class="label">Firstname: </span>
+                <span class="value" id="firstname"/>
+            </p>
+
+            <p>
+                <span class="label">Lastname: </span>
+                <span class="value" id="lastname"/>
+            </p>
+
+            <p>
+                <span class="label">Mail: </span>
+                <span class="value" id="mail"/>
+            </p>
+
+            <p>
+                <span class="label">Telefono: </span>
+                <span class="value" id="phone"/>
+            </p>
+
+            <h3>Dirección</h3>
+
+            <p>
+                <span class="label">Calle: </span>
+                <span class="value" id="street"/>
+            </p>
+
+            <p>
+                <span class="label">Provincia: </span>
+                <span class="value" id="province"/>
+            </p>
+
+            <p>
+                <span class="label">Codigo Postal: </span>
+                <span class="value" id="post-code"/>
+            </p>
+
+            <h3>Otros datos</h3>
+
+            <p>
+                <span class="label">Fecha de nacimiento: </span>
+                <span class="value" id="birthdate"/>
+            </p>
+
+            <p>
+                <span class="label">Estado civil: </span>
+                <span class="value" id="civilstate"/>
+            </p>
+
+            <p>
+                <span class="label">About: </span>
+                <span class="value" id="about"/>
+            </p>
+        </div>
+    </div>
+    <div class="dialog-footer">
+        <button class="close-dialog">
+            Ok
+        </button>
+    </div>
+</div>
+
+<div class="dialog" id="formDialog">
+    <div class="dialog-header   ">
+        <h3>Formulario</h3>
+    </div>
+    <div class="dialog-body">
+        <form action="" id="personForm">
+            <div>
+                <label for="create-firstname">Firstname:</label>
+                <input name="firstname" type="text" id="create-firstname"/>
+            </div>
+            <div>
+                <label for="create-lastname">Lastname:</label>
+                <input name="lastname" type="text" id="create-lastname"/>
+            </div>
+            <div>
+                <label for="create-mail">Mail:</label>
+                <input name="mail" type="text" id="create-mail"/>
+            </div>
+            <div>
+                <label for="create-phone">Telefono:</label>
+                <input name="phone" type="text" id="create-phone"/>
+            </div>
+
+            <h3>Dirección</h3>
+
+            <div>
+                <label for="create-street">Calle:</label>
+                <input name="street" type="text" id="create-street"/>
+            </div>
+            <div>
+                <label for="create-state">Provincia:</label>
+                <select name="state" id="create-state">
+                    <option value="buenosaires">Buenos Aires</option>
+                    <option value="santafe">Santa Fe</option>
+                    <option value="cordoba">Cordoba</option>
+                    <option value="jujuy">Jujuy</option>
+                </select>
+            </div>
+            <div>
+                <label for="create-post-code">Codigo Postal:</label>
+                <input name="postcode" type="text" id="create-post-code"/>
+            </div>
+
+            <h3>Otros datos</h3>
+
+            <div>
+                <label for="create-birthdate">Fecha de Nacimiento:</label>
+                <input name="birthdate" type="text" id="create-birthdate" maxlength="10"/>
+            </div>
+            <div>
+                <label>Estado Civil:</label>
+                <label>Soltero<input type="radio" checked="checked" value="single" name="civilstate"/></label>
+                <label>Casado<input type="radio" value="married" name="civilstate"/></label>
+            </div>
+            <div>
+                <label for="create-picture">Imagen:</label>
+                <input type="file" id="create-picture"/>
+            </div>
+            <div>
+                <label for="create-about">About</label>
+                <textarea name="about" id="create-about" cols="50" rows="5"/>
+            </div>
+        </form>
+    </div>
+    <div class="dialog-footer">
+        <button class="close-dialog">
+            Cancel
+        </button>
+        <button class="accept-dialog">
+            Save
+        </button>
+    </div>
+</div>
+
+<div class="dialog" id="deleteDialog">
+    <div class="dialog-header">
+        <h3>Delete</h3>
+    </div>
+    <div class="dialog-body">
+        <p>Are you sure you want to delete <span id="deletePerson">this person</span> ?</p>
+    </div>
+    <div class="dialog-footer">
+        <button class="close-dialog">
+            Cancel
+        </button>
+        <button class="accept-dialog">
+            OK
+        </button>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="js/service.js"></script>
+<script type="text/javascript" src="js/dialog.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
