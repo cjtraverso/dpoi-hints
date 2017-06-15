@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Users Practice</title>
+  </head>
+  <body>
+    <header>
+      <h1>MuleSoft Work</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="concepts.html#evil-br">The Evil <strong>br</strong> tag</a></li>
+        <li><a href="concepts.html#basic-concepts">Basic Concepts</a></li>
+        <li><a href="users.html">Users Practice</a></li>
+      </ul>
+    </nav>
+    <section class="tableSection">
+      <h2>Users Table</h2>
+      <table id="userTable">
+        <thead>
+          <tr>
+            <th rowspan="2">Firstname</th>
+            <th rowspan="2">Lastname</th>
+            <th rowspan="2">Mail</th>
+            <th rowspan="2">Phone</th>
+            <th colspan="3">Actions</th>
+          </tr>
+          <tr>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pedro</td>
+            <td>Colunga</td>
+            <td>xx@yy.com</td>
+            <td>1153107654</td>
+            <td><i class="fa fa-user"></i></td>
+            <td><i class="fa fa-pencil-square"></i></td>
+            <td><i class="fa fa-trash"></i></td>
+          </tr>
+          <tr>
+            <td>Agustín</td>
+            <td>López Gabeiras</td>
+            <td>yy@xx.com</td>
+            <td>1153107654</td>
+            <td><i class="fa fa-user"></i></td>
+            <td><i class="fa fa-pencil-square"></i></td>
+            <td><i class="fa fa-trash"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="formSection">
+      <h2>Form</h2>
+      <form>
+        <fieldset>
+          <legend>User</legend>
+            <div>
+              <label for="firstname">First Name</label>
+              <input type="text" name="firstname" id="firstname" placeholder="Firstname"/>
+            </div>
+            <div>
+              <label for="lastname">Last Name</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Lastname"/>
+            </div>
+            <div>
+              <label for="mail">Mail</label>
+              <input type="email" name="mail" id="mail" placeholder="Mail"/>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="phone" placeholder="Phone"/>
+            </div>
+        </fieldset>
+        <fieldset>
+          <legend>Address</legend>
+          <div>
+            <label for="street">Street</label>
+            <input type="text" name="street" id="street" placeholder="Street"/>
+          </div>
+          <div>
+            <label for="province">Province</label>
+            <input list="provinces" name="province" id="province" placeholder="Province"/>
+            <datalist id="provinces">
+              <option value="Buenos Aires">
+              <option value="Cordoba">
+              <option value="San Luis">
+              <option value="Nequen">
+            </datalist>
+          </div>
+          <div>
+            <label for="postalcode">Postal Code</label>
+            <input type="text" name="postalcode" id="postalcode" placeholder="Postal Code"/>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>BirthDate</legend>
+          <div>
+            <label for="birthdate">BirthDate</label>
+            <input type="date" name="birthdate" id="birthdate"/>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Civil Status</legend>
+          <div>
+            <input type="radio" name="civilStatus" value="single"/>Single
+          </div>
+          <div>
+            <input type="radio" name="civilStatus" value="married"/>Married
+          </div>
+          <div>
+            <input type="radio" name="civilStatus" value="divorced"/>Divorced
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Photo</legend>
+          <div>
+            <input type="file" name="photo"/>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Comments</legend>
+          <div>
+            <textarea name="comments" placeholder="Make your comments here" rows="5" cols="50"></textarea>
+          </div>
+        </fieldset>
+        <div>
+          <button type="submit" value="Submit">Submit</button>
+          <button type="reset" value="Reset">Reset</button>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <p>Powered by: <strong>MuleSoft</strong></p>
+      <p>Contact to: <a href="mailto:traverso.cristian90@gmail.com">traverso.cristian90@gmail.com</a></p>
+    </footer>
+  </body>
+</html>
