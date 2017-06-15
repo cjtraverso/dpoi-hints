@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/vertical.css">
     <!--<link rel="stylesheet" href="css/horizontal.css">-->
+    <script type="text/javascript" src="js/users-api.js"></script>
     <title>Users Practice</title>
   </head>
-  <body>
+  <body onload="invokeListDelayService(loadTable)">
     <header>
       <h1>MuleSoft Work</h1>
     </header>
@@ -21,10 +22,6 @@
         <li><a href="users.html">Users Practice</a></li>
       </ul>
     </nav>
-    <dialog class="viewDialog">
-      <h2>Users</h2>
-      <p></p>
-    </dialog>
     <section class="tableSection">
       <h2>Users Table</h2>
       <table id="userTable">
@@ -43,26 +40,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Pedro</td>
-            <td>Colunga</td>
-            <td>xx@yy.com</td>
-            <td>1153107654</td>
-            <td><i class="fa fa-user"></i></td>
-            <td><i class="fa fa-pencil-square"></i></td>
-            <td><i class="fa fa-trash"></i></td>
-          </tr>
-          <tr>
-            <td>Agustín</td>
-            <td>López Gabeiras</td>
-            <td>yy@xx.com</td>
-            <td>1153107654</td>
-            <td><i class="fa fa-user"></i></td>
-            <td><i class="fa fa-pencil-square"></i></td>
-            <td><i class="fa fa-trash"></i></td>
-          </tr>
         </tbody>
       </table>
+      <div id="loadingTable">
+        <p><strong>The table is being loaded</strong></p>
+        <div id="loader"></div>
+      </div>
     </section>
     <section class="formSection">
       <h2>Form</h2>
