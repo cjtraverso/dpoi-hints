@@ -1,0 +1,58 @@
+form {
+  margin: 0 auto;
+  width: 60%;
+}
+
+form fieldset {
+  border: 1px solid cornflowerblue;
+  margin: 5px;
+}
+
+form legend {
+  text-align: right;
+  font-size: 90%;
+  font-style: italic;
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+}
+
+form input {
+  padding: 8px 16px;
+}
+
+form div {
+  margin: 5px;
+}
+
+form button {
+  background-color: darkgrey;
+  color: azure;
+  font-size: 14px;
+}
+
+form button:hover {
+  background: green;
+  color: white;
+}
+
+label, input {
+  display: inline-block;
+}
+
+label {
+  width: 20%;
+}
+
+input {
+  width: 50%;
+}
+
+input[type=radio] {
+  width: 5%;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  width: 90%;
+}
